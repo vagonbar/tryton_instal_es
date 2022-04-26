@@ -1,0 +1,24 @@
+[client]
+lang = es
+language_direction = ltr
+timezone = America/Montevideo
+
+[menu]
+expanded = True
+pane = 200
+
+[login]
+profile = demo5.0.tryton.org
+port = 8000
+login = demo_es
+expanded = True
+server = demo5.0.tryton.org
+db = demo5.0
+
+[database]
+uri = postgresql://tryton:tryton@localhost:5432/
+path = ~/tryton-db
+
+[web]
+listen = 0.0.0.0:8000
+
