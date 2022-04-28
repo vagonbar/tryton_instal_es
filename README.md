@@ -185,13 +185,11 @@ Esta sección describe la creación de una base de datos y su registro en Tryton
 
 3. Arrancar el cliente, con la opción correspondiente del script. Abre la ventana del cliente Tryton.
 
-![Cliente Tryton, inicio](./images/tryton-client-1.jpg)
+    ![Cliente Tryton, inicio](./images/tryton-client-1.jpg)
 
 4. Administrar la base de datos. En la ventana Usuario de Tryton, crear un perfil para acceder a la base de datos BDprueba:
     - botón Gestionar, abre Editor de perfiles
-
-![Cliente Tryton, perfil](./images/tryton-client-2.jpg)
-
+    ![Cliente Tryton, perfil](./images/tryton-client-2.jpg)
     - botón **\[\+\]** para agregar un perfil: 
         - Perfil: local_bdprueba
         - Servidor: localhost
@@ -199,11 +197,12 @@ Esta sección describe la creación de una base de datos y su registro en Tryton
         - Nombre de usuario: admin
     - cerrar la ventana de gestión de perfiles.
 
-![Cliente Tryton, perfil](./images/tryton-client-3.jpg)
+    ![Cliente Tryton, perfil](./images/tryton-client-3.jpg)
 
     Cuando pide contraseña: `admprueba`. Queda en la ventana `Tryton - Administrator`.
 
-![Tryton Client, ventana administrador](./images/tryton-client-admin.jpg)
+
+    ![Tryton Client, ventana administrador](./images/tryton-client-admin.jpg)
 
 
 ## Cliente Tryton
