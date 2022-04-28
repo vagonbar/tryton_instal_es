@@ -142,7 +142,7 @@ El usuario `tryton`, contraseña `tryton`, será el dueño de todas las bases de
 Esto se realiza por única vez, y el usuario `tryton` debe mantenerse mientras se usen bases de dato PostreSQL en Tryton.
 
 
-El directorio de almacenamiento para las bases de datos será `~/tryton-db`, como puede verse en la línea `path` de1 archivo de configuración. Crear este directorio. 
+El directorio de almacenamiento para las bases de datos será `~/tryton-db`, como puede verse en la línea `path` del archivo de configuración. Crear este directorio. 
 
     $ mkdir ~/tryton-db
 
@@ -185,8 +185,11 @@ Esta sección describe la creación de una base de datos y su registro en Tryton
 
 3. Arrancar el cliente, con la opción correspondiente del script. Abre la ventana del cliente Tryton.
 
+    ![Cliente Tryton, inicio](./images/tryton-client-1.jpg)
+
 4. Administrar la base de datos. En la ventana Usuario de Tryton, crear un perfil para acceder a la base de datos BDprueba:
     - botón Gestionar, abre Editor de perfiles
+    ![Cliente Tryton, perfil](./images/tryton-client-2.jpg)
     - botón **\[\+\]** para agregar un perfil: 
         - Perfil: local_bdprueba
         - Servidor: localhost
@@ -194,7 +197,12 @@ Esta sección describe la creación de una base de datos y su registro en Tryton
         - Nombre de usuario: admin
     - cerrar la ventana de gestión de perfiles.
 
+    ![Cliente Tryton, perfil](./images/tryton-client-3.jpg)
+
     Cuando pide contraseña: `admprueba`. Queda en la ventana `Tryton - Administrator`.
+
+
+    ![Tryton Client, ventana administrador](./images/tryton-client-admin.jpg)
 
 
 ## Cliente Tryton
