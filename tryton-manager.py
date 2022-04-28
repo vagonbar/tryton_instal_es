@@ -21,7 +21,7 @@
 # Boston, MA 02110-1301, USA.
 #
 #
-# gestionar.py: script para gestionar Tryton
+# tryton-manager.py: script para gestionar Tryton
 #
 
 
@@ -29,7 +29,7 @@ import sys
 
 
 #from instal_lib import start_client, stop_client, start_server, stop_server, mostrar_bd, server_up, my_quit_fn, invalid
-from instal_lib import *
+from lib_tryton_manager import *
 
 
 # mensajes de título y ayuda

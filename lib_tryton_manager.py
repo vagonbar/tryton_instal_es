@@ -21,7 +21,7 @@
 # Boston, MA 02110-1301, USA.
 #
 #
-# instala_lib.py: biblioteca para instalación y manejo de Tryton
+# lib-tryton-manager.py: biblioteca para instalación y manejo de Tryton
 #
 
 import os

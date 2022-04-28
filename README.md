@@ -107,8 +107,10 @@ Indica si `trytond` está corriendo; si en TTY indica "?" significa que `trytond
 4. Verificar que `trytond` no arrancó automáticamente:
     ```
     $ ps -C trytond
+        PID TTY          TIME CMD
+
     ```
-    No debe dar nada.
+    No debe mostrar ningún proceso.
 
 5. Para reponer el arranque automático al inicio:
     ```
@@ -132,7 +134,7 @@ El archivo de configuración debe contener al menos estas líneas:
     [web]
     listen = 0.0.0.0:8000
 
-El script `db_psql.sh` provisto en este sitio permite realizar varias de las tareas siguientes. 
+El script `db_psql.sh` provisto en este sitio permite realizar las tareas necesarias para la creación de usuario y bases de datos en PostgreSQL. 
 
 El usuario `tryton`, contraseña `tryton`, será el dueño de todas las bases de datos PostgreSQL que use Tryton. Esto puede verse en la línea `uri` del archivo de configuración. Para crear este usuario:
 
@@ -146,9 +148,9 @@ El directorio de almacenamiento para las bases de datos será `~/tryton-db`, com
 
 ### Script de gestión
 
-El script `gestionar.py` permite realizar diversas tareas.
+El script `tryton-manager.py` permite realizar diversas tareas.
 
-    $ python3 gestionar.py
+    $ python3 tryton-manager.py
     Tryton, scripts de gestión.
     -- Bases de datos
        1 : Crear y registrar base de datos.
@@ -167,7 +169,7 @@ Usaremos este script para la creación de bases de datos y el manejo de cliente 
 
 ### Crear una base de datos
 
-Esta sección describe la creación de una base de datos y su registro en Tryton usando el script `gestionar.py`.
+Esta sección describe la creación de una base de datos y su registro en Tryton usando el script `tryton-manager.py`.
 
 1. Crear y registrar una base de datos de prueba, con la opción correspondiente del script. Nombre de la base de datos: DBprueba.  El registro de la base de datos en Tryton muestra los módulos instalados, puede demorar; finalmente, pide e-mail y contraseña de administrador.
     ```
