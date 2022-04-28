@@ -199,7 +199,7 @@ Esta sección describe la creación de una base de datos y su registro en Tryton
 
     ![Cliente Tryton, perfil](./images/tryton-client-3.jpg)
 
-    Cuando pide contraseña: `admprueba`. Queda en la ventana `Tryton - Administrator`.
+    Conectar al servidor, botón `Conectar`. Cuando pide contraseña: `admprueba`. Queda en la ventana `Tryton - Administrator`.
 
 
     ![Tryton Client, ventana administrador](./images/tryton-client-admin.jpg)
