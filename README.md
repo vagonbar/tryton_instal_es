@@ -139,7 +139,7 @@ El script `db_psql.sh` provisto en este sitio permite realizar las tareas necesa
 El usuario `tryton`, contraseña `tryton`, será el dueño de todas las bases de datos PostgreSQL que use Tryton. Esto puede verse en la línea `uri` del archivo de configuración. Para crear este usuario:
 
     bash db_psql.sh createtryton
-Esto se realiza por única vez, y el usuario `tryton` debe mantenerse mientras se usen bases de dato PostreSQL en Tryton.
+Esto se realiza por única vez, y el usuario `tryton` debe mantenerse mientras se usen bases de datos PostreSQL en Tryton.
 
 
 El directorio de almacenamiento para las bases de datos será `~/tryton-db`, como puede verse en la línea `path` del archivo de configuración. Crear este directorio. 
@@ -223,12 +223,12 @@ Para acceder al servidor Tryton desde otra máquina:
     - botón Gestionar, abre Editor de perfiles
     - botón **\[\+\]** para agregar un perfil: 
         - Perfil: remoto_bdprueba
-        - Servidor: <nombre del servidor>
+        - Servidor: \<nombre del servidor\>:8000
         - Base de Datos: BDprueba
         - Nombre de usuario: admin
     - cerrar la ventana de gestión de perfiles.
 
-    Cuando pide contraseña: `admprueba`. Queda en la ventana `Tryton - Administrator`.
+    El \<nombre del servidor\> debe ser el nombre o el número IP de una máquina accesible en la red. Cuando pide contraseña: `admprueba`. Queda en la ventana `Tryton - Administrator`.
 
 
 
