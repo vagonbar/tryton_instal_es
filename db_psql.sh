@@ -29,9 +29,10 @@ DBACCION="$1"
 DBNAME="$2"
 if [ -z "$3" ]
 then
-    CONFFILE=~/.config/tryton/5.0/tryton.conf
+    CONFFILE=~/.config/tryton/5.0/tryton.conf  # configuración personal
+    #CONFFILE=/etc/tryton/trytond.conf         # configuración del sistema
 else
-    CONFFILE="$3"
+    CONFFILE="$3"                              # configuración según parámetro
 fi
 
 #echo "$DBACCION" "$DBUSER" "$DBNAME" "$CONFFILE"
@@ -47,12 +48,16 @@ then
   echo "db_psql.sh : crea, registra, consulta y borra bases de datos en Tryton"
   echo "uso:"
   echo "     bash db_psql.sh create nombre_bd [config_arch]"
+  echo "         # crea una base de datos nombre_bd"
   echo "     bash db_psql.sh register bd_nombre_bd [config_arch]"
+  echo "         # registra la base de datos nombre_bd en Tryton"
   echo "     bash db_psql.sh drop nombre_bd [config arch]"
-  echo "     bash db_psql.sh mostrar" 
-  echo "     bash db_psql.sh createtryton"
-  echo "     bash db_psql.sh droptryton"
+  echo "         # borra la base de datos nombre_bd"
+  echo "     bash db_psql.sh mostrar       # muestra bases de datos"
+  echo "     bash db_psql.sh createtryton  # crea usuario tryton"
+  echo "     bash db_psql.sh droptryton    # elimina usuario tryton"
   echo
+  exit
 fi
 
 if [ "$DBACCION" = "createtryton" ]    # crea usuario tryton

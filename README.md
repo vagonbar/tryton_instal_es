@@ -82,6 +82,21 @@ La modificación del archivo de configuración `trytond.conf` requerida pra usar
 
 La configuración a nivel de sistema es recomendable para servidores Tryton en producción, cuando el desarrollo ha terminado. Con esta configuración, podrán acceder al equipo servidor clientes Tryton instalados en las otras  máquinas de la empresa.
 
+Los administradores de Tryton a nivel de sistema preferirán quizás usar comandos en lugar de scripts. En todo caso, el siguiente script puede ser de utilidad:
+
+    $ bash db_psql.sh 
+    db_psql.sh : crea, registra, consulta y borra bases de datos en Tryton
+    uso:
+         bash db_psql.sh create nombre_bd [config_arch]
+             # crea una base de datos nombre_bd
+         bash db_psql.sh register bd_nombre_bd [config_arch]
+             # registra la base de datos nombre_bd en Tryton
+         bash db_psql.sh drop nombre_bd [config arch]
+             # borra la base de datos nombre_bd
+         bash db_psql.sh mostrar       # muestra bases de datos
+         bash db_psql.sh createtryton  # crea usuario tryton
+         bash db_psql.sh droptryton    # elimina usuario tryton
+
 
 ## Configuración por usuario
 
@@ -148,7 +163,7 @@ El directorio de almacenamiento para las bases de datos será `~/tryton-db`, com
 
 ### Script de gestión
 
-El script `tryton-manager.py` permite realizar diversas tareas.
+El script `tryton-manager.py` permite realizar diversas tareas. NOTA: este script es solo para la configuración por usuario, no para la configuración de sistema.
 
     $ python3 tryton-manager.py
     Tryton, scripts de gestión.
