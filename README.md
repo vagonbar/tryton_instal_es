@@ -37,7 +37,7 @@ La instalación desde la distribución arranca el servidor automáticamente al i
 
     chmod ug+w /etc/tryton/trytond.conf
     sudo vi /etc/tryton/trytond.conf    # u otro editor 
-    chmod a-x /etc/tryton/trytond.conf 
+    chmod a-w /etc/tryton/trytond.conf 
 
 Para determinar el nombre del servicio asociado al servidor Tryton:
     
